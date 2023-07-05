@@ -100,7 +100,7 @@ const HeaderMobile: React.FC = () => {
   console.log(showItems);
 
   return (
-    <header className=" fixed w-full z-10 bg-gradient-to-r from-[#026FED] to-primary-500 via-primary from-35%  via-50% grid grid-cols-2 items-center justify-stretch p-3">
+    <header className=" fixed w-full z-10 bg-gradient-to-r from-[#026FED] to-primary  grid grid-cols-2 items-center justify-stretch p-3">
       <div className="w-full">
         <img src={Logo} className="w-52" />
       </div>

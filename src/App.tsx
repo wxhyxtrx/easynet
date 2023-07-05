@@ -21,7 +21,6 @@ import { Main } from "./components/organism/main";
 import { dataStatic } from "./constant/dataStatic";
 function App() {
   const [testimoni, setTestimoni] = useState<any>();
-
   useEffect(() => {
     setTestimoni(dataStatic.testimoni[0]);
   }, []);
@@ -30,9 +29,9 @@ function App() {
     <div className=" w-full h-screen">
       <Banner>
         <Header />
-        <div className="h-full flex items-center justify-center mb-6 p-4">
-          <form className=" allDekstop:w-1/2 w-full md:w-full justify-center flex flex-wrap allDekstop:mb-28 allMobile:my-10">
-            <div className="flex flex-wrap gap-4 justify-center w-full">
+        <div className="h-full flex items-center justify-center mb-6 p-4 ">
+          <form className=" allDekstop:w-1/2 w-full md:w-full justify-center flex flex-wrap allDekstop:mb-28 allMobile:my-10 ">
+            <div className="flex flex-wrap gap-4 justify-center w-full mobileM:mt-20">
               <h3 className="text-white allDekstop:text-4xl allMobile:text-2xl allTab:text-4xl text-center font-bold">
                 Bangun Website Terbaik dengan Layanan Hosting Terbaik
               </h3>
@@ -426,7 +425,7 @@ function App() {
               <p>Telepon : 0333-271119999</p>
               <p>WhatsApp : 087701006245</p>
             </div>
-            <ul className=" flex flex-wrap flex-1 justify-stretch gap-5">
+            <ul className=" flex flex-wrap flex-1 allMobile:grid allMobile:grid-cols-3 justify-stretch allDekstop:gap-5 allMobile:gap-4 items-center">
               <li className=" bg-secondary-500 text-lg rounded-full p-3 hover:bg-secondary-600">
                 <FaInstagram />
               </li>
@@ -592,7 +591,7 @@ function App() {
                   />
                 </div>
               ))}
-              <div className="col-span-4 allMobile:col-span-3 text-center bg-primary-400 hover:bg-primary-500 cursor-pointer py-1.5 rounded-md text-xs">
+              <div className="col-span-4 allMobile:col-span-3 text-center bg-primary-400 hover:bg-primary-500 cursor-pointer py-1.5 rounded-md text-xs allMobile:text-sm">
                 Lihat metode lainya
               </div>
             </div>
